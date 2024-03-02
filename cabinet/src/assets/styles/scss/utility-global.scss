@@ -1,0 +1,43 @@
+@import url("./variables.css");
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap {
+  gap: var(--md);
+}
+
+.gap-2 {
+  gap: var(--lg);
+}
+
+.gap-3 {
+  gap: var(--xl);
+}
+
+.mt {
+  margin-top: var(--md);
+}
+
+.mt-2 {
+  margin-top: var(--lg);
+}
+
+.mt-3 {
+  margin-top: var(--xl);
+}
