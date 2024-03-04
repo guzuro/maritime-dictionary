@@ -9,14 +9,14 @@
       >
         <VaInput
           v-model="formFields.username"
-          :rules="[(value) => (value && value.length > 0) || 'Username is required']"
+          :rules="[(value) => requiredInput(value, 'Username')]"
           label="Username"
         />
 
         <VaInput
           v-model="formFields.password"
           type="password"
-          :rules="[(value) => (value && value.length > 0) || 'Password is required']"
+          :rules="[(value) => requiredInput(value, 'Password')]"
           label="Password"
         />
 
@@ -48,6 +48,9 @@ import { reactive } from "vue";
 import { VaCard, VaCardTitle, VaCardContent, VaForm, VaInput, VaButton, useForm } from "vuestic-ui";
 import { useRouter } from "vue-router";
 import { AuthData } from "../../types/auth";
+
+import { requiredInput } from "../../helpers/fieldValiadtonRules";
+
 
 const { isValid, validate } = useForm("form");
 const { replace } = useRouter();
