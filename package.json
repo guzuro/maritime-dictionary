@@ -1,0 +1,15 @@
+{
+"name": "maritime-dict",
+"version": "1.0.0.",
+"private": true,
+"scripts": {
+  "dev": "turbo dev"
+  },
+"workspaces": [
+  "apps/*",
+  "packages/*"
+],
+  "devDependencies": {
+    "turbo": "1.12.4"
+  }
+}
