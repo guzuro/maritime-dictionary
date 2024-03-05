@@ -1,9 +1,9 @@
 {
-  "name": "admin",
+  "name": "maritime-dict-cabinet",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
-  "scripts": {
+   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
@@ -13,6 +13,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "axios": "^1.6.7",
     "vue": "^3.4.15",
     "vue-router": "4",
     "vuestic-ui": "^1.9.2"
