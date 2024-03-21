@@ -5,15 +5,16 @@
   "type": "module",
   "license": "MIT",
   "private": true,
-    "scripts": {
+  "scripts": {
     "build": "tsc -p tsconfig.json",
     "start": "node dist/index.js",
-    "dev": "tsx watch ./src",
+    "dev": "tsx watch ./src/",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
   "dependencies": {
     "@fastify/autoload": "^5.8.0",
+    "@fastify/cors": "^9.0.1",
     "bcryptjs": "^2.4.3",
     "fastify": "^4.26.1",
     "mongoose": "^8.2.0"
@@ -23,9 +24,9 @@
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
     "eslint": "^8.56.0",
+    "maritime-dict-contracts": "*",
     "prettier": "^3.0.3",
     "tsx": "^4.7.1",
-    "typescript": "^5.3.3",
-    "maritime-dict-contracts": "*"
+    "typescript": "^5.3.3"
   }
 }
