@@ -1,11 +1,12 @@
 import { FastifyInstance } from "fastify";
+import { AuthService } from "../services/auth.js";
 
 export default async function (fastify: FastifyInstance) {
-  fastify.get("/auth/signin", async function (request, reply) {
-    return "/auth/login";
+  fastify.post("/auth/signin", async function (request, reply) {
+    return AuthService.signIn()
   });
 
-  fastify.get("/auth/signup", async function (request, reply) {
-    return "/auth/signup";
+  fastify.post("/auth/signup", async function (request, reply) {  
+    return AuthService.signUp()
   });
 }
