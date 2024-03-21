@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+import { Schema, model } from "mongoose";
 
 const userSchema = new Schema({
   login: { type: String, required: true, unique: true },
@@ -6,3 +6,5 @@ const userSchema = new Schema({
   avatar: { type: String },
 });
 
+
+export default model('User', userSchema)
