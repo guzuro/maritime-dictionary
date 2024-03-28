@@ -14,7 +14,7 @@ export type IEntity = {
     role: UserRole
   };
   
-  export type IClient = IEntity & {
+  export type IStudent = IEntity & {
       login: string;
       password?: string;
       mainLanguage: Languages;
