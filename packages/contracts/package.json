@@ -1,6 +1,5 @@
 {
-    "name": "maritime-dict-contracts",
-    "version": "1.0.0",
-    "type": "module",
-    "types": "dist/types/index.d.ts"
+    "name": "maritime-contracts",
+    "version": "1.0.2",
+    "types": "index.d.ts"
 }
