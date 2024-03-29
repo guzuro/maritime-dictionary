@@ -16,7 +16,7 @@ export type IEntity = {
   
   export type IStudent = IEntity & {
       login: string;
-      password?: string;
+      password: string;
       mainLanguage: Languages;
       avatar?: string;
     };
