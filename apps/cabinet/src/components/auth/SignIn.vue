@@ -8,9 +8,9 @@
         class="flex flex-column gap-2"
       >
         <VaInput
-          v-model="formFields.username"
-          :rules="[(value) => requiredInput(value, 'Username')]"
-          label="Username"
+          v-model="formFields.login"
+          :rules="[(value) => requiredInput(value, 'Login')]"
+          label="Login"
         />
 
         <VaInput
@@ -47,17 +47,19 @@
 import { reactive } from "vue";
 import { VaCard, VaCardTitle, VaCardContent, VaForm, VaInput, VaButton, useForm } from "vuestic-ui";
 import { useRouter } from "vue-router";
-import { AuthData } from "../../types/auth";
 
 import { requiredInput } from "../../helpers/fieldValiadtonRules";
+import { SignInData } from "maritime-contracts";
+import { api } from "../../api";
 
 
 const { isValid, validate } = useForm("form");
 const { replace } = useRouter();
 
-const formFields = reactive<AuthData>({
-  username: "",
-  password: ""
+const formFields = reactive<SignInData>({
+  login: "",
+  password: "",
+  role: "student"
 });
 
 const gotoSignUp = () => {
@@ -66,8 +68,8 @@ const gotoSignUp = () => {
   });
 };
 
-const submit = () => {
-  console.log(1);
+const submit = async () => {
+  await api.auth.signIn(formFields)
 };
 </script>
 
