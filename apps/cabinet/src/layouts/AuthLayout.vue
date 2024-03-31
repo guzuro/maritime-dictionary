@@ -7,7 +7,14 @@
 </template>
 
 <script setup lang="ts">
-import { RouterView } from "vue-router";
+import { onMounted } from "vue";
+import { useRouter, RouterView } from "vue-router";
+
+const { replace } = useRouter();
+
+onMounted(() => {
+  replace({ name: "Login" });
+});
 </script>
 
 <style scoped lang="scss">
