@@ -6,6 +6,11 @@ const studentSchema = new Schema<IStudent>({
   password: { type: String, required: true },
   mainLanguage: { type: String, enum: ["en", "ru"], default: "ru" },
   avatar: { type: String }
-});
+},   
+{timestamps: {
+  createdAt: 'created_at',
+  updatedAt: 'updated_at' 
+}}
+);
 
 export default model("Student", studentSchema);
