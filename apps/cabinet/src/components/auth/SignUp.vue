@@ -49,7 +49,7 @@ import { VaCard, VaCardTitle, VaCardContent, VaForm, VaInput, VaButton, useForm 
 import { useRouter } from "vue-router";
 
 import { requiredInput } from "../../helpers/fieldValiadtonRules";
-import { SignUpData } from 'maritime-contracts'
+import { SignUpData } from "maritime-contracts";
 import { api } from "../../api";
 
 const { isValid, validate } = useForm("form");
@@ -57,7 +57,7 @@ const { replace } = useRouter();
 
 const formFields = reactive<SignUpData>({
   login: "",
-  password: "",
+  password: ""
 });
 
 const gotoSignUp = () => {
@@ -67,10 +67,10 @@ const gotoSignUp = () => {
 };
 
 const submit = async () => {
-  const res = await api.auth.signUp(formFields)
+  const res = await api.auth.signUp(formFields);
 
   if (res) {
-    gotoSignUp()
+    gotoSignUp();
   }
 };
 </script>

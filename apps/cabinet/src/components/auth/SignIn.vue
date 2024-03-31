@@ -52,7 +52,6 @@ import { requiredInput } from "../../helpers/fieldValiadtonRules";
 import { SignInData } from "maritime-contracts";
 import { api } from "../../api";
 
-
 const { isValid, validate } = useForm("form");
 const { replace } = useRouter();
 
@@ -69,7 +68,7 @@ const gotoSignUp = () => {
 };
 
 const submit = async () => {
-  await api.auth.signIn(formFields)
+  await api.auth.signIn(formFields);
 };
 </script>
 
