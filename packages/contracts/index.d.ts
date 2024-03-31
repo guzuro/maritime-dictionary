@@ -1,7 +1,7 @@
 export type IEntity = {
   _id?: string;
-  createdAt?: Date | string;
-  updatedAt?: Date | string;
+  created_at?: Date | string;
+  updated_at?: Date | string;
 };
 
 export type UserRole = "admin" | "student";
@@ -9,16 +9,14 @@ export type UserRole = "admin" | "student";
 export type IBaseUser = IEntity & {
   login: string;
   password?: string;
-  mainLanguage: Languages;
   avatar?: string;
   role: UserRole;
 };
 
-export type IStudent = IEntity & {
-  login: string;
-  password: string;
+export type IAdmin = IBaseUser;
+
+export type IStudent = IBaseUser & {
   mainLanguage: Languages;
-  avatar?: string;
 };
 
 type Languages = "en" | "ru";
