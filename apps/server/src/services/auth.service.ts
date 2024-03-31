@@ -15,10 +15,12 @@ export const AuthService = {
     const user = await Student.findOne({ login }).exec();
 
     if (user) {
-      const isPasswordValid = await bcrypt.compare(password, user.password);
+      if (user.password) {
+        const isPasswordValid = await bcrypt.compare(password, user.password);
 
-      if (isPasswordValid) {
-        return true;
+        if (isPasswordValid) {
+          return true;
+        }
       }
 
       throw new PasswordNotValidException();
