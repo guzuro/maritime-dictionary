@@ -13,21 +13,21 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@fastify/autoload": "^5.8.0",
+    "@fastify/autoload": "^5.8.2",
     "@fastify/cors": "^9.0.1",
-    "ajv": "^8.12.0",
+    "ajv": "^8.13.0",
     "bcryptjs": "^2.4.3",
-    "fastify": "^4.26.1",
-    "mongoose": "^8.2.0"
+    "fastify": "^4.27.0",
+    "mongoose": "^8.4.0"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.3",
-    "@types/node": "^20.11.24",
+    "@types/node": "^20.12.12",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
-    "eslint": "^8.56.0",
+    "eslint": "^9.3.0",
     "maritime-contracts": "*",
-    "tsx": "^4.7.1",
-    "typescript": "^5.3.3"
+    "tsx": "^4.10.5",
+    "typescript": "^5.4.5"
   }
 }
