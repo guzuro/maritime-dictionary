@@ -2312,10 +2312,10 @@ vue@^3.4.27:
     "@vue/server-renderer" "3.4.27"
     "@vue/shared" "3.4.27"
 
-vuestic-ui@^1.9.10:
-  version "1.9.10"
-  resolved "https://registry.yarnpkg.com/vuestic-ui/-/vuestic-ui-1.9.10.tgz#ff42530a56eaa92778d3612d5bb7e1de69d061ca"
-  integrity sha512-gUwf2TAWpW1/kUNCiZ8zBC4f3CEZDHXkJQsicTU2KEW6D91q6A24DSw8grxcl7myrav4YQhkl6kg0WvVa+CW5Q==
+vuestic-ui@^1.9.12:
+  version "1.9.12"
+  resolved "https://registry.yarnpkg.com/vuestic-ui/-/vuestic-ui-1.9.12.tgz#fce6aea6b46595d866a08975645ec2df057969ad"
+  integrity sha512-YIcNBLbpryIQS8dGyNnxQ+1RgTPbm0rJ9biywei4+fVxMIcNGVs/qC2muAKwd9Od3GCJVbx/+uGxedjxXV1vLA==
   dependencies:
     "@floating-ui/vue" "^1.0.1"
     "@types/lodash" "^4.14.161"
