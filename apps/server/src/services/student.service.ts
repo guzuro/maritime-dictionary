@@ -16,7 +16,6 @@ export const StudentService = {
       return true;
     }
 
-    throw PasswordNotValidException
-
+    throw PasswordNotValidException;
   }
 };
