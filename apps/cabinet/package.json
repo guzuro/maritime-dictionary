@@ -16,7 +16,7 @@
     "axios": "^1.6.8",
     "vue": "^3.4.27",
     "vue-router": "4",
-    "vuestic-ui": "^1.9.12"`
+    "vuestic-ui": "^1.9.12"
   },
   "devDependencies": {
     "maritime-contracts": "*",
