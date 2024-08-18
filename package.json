@@ -10,8 +10,9 @@
   "apps/*",
   "packages/*"
 ],
+"packageManager": "yarn@1.22.22",
   "devDependencies": {
     "prettier": "^3.2.5",
-    "turbo": "1.12.4"
+    "turbo": "^2.0.14"
   }
 }
